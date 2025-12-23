@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resources>
     <!--Buttons-->
-    <string name="button_exit">Выход</string>
+    <string name="button_exit">Выйти</string>
     <string name="button_close">Закрыть</string>
     <string name="button_yes">Да</string>
     <string name="button_no">Нет</string>
     <string name="button_add">Добавить</string>
-    <string name="button_cancel">Отмена</string>
+    <string name="button_cancel">Отменить</string>
     <string name="button_save">Сохранить</string>
-    <string name="button_help">Справка</string>
+    <string name="button_help">Помощь</string>
 
     <!--Progress phases-->
     <string name="phase_check">Проверка</string>
     <string name="phase_download">Загрузка</string>
-    <string name="phase_parse">Разбор</string>
+    <string name="phase_parse">Обработка</string>
     <string name="pause_update">Приостановить обновление</string>
     <string name="resume_update">Возобновить обновление</string>
     <string name="stop_update">Остановить обновление</string>
@@ -22,7 +22,7 @@
     <!--Home-->
     <string name="header_help">Добро пожаловать!</string>
     <string name="text_help">AdAway — это свободное программное обеспечение с открытым исходным кодом, предназначенное для блокировки рекламы. Оно загружает адреса рекламных сетей, чтобы заблокировать их на вашем устройстве.\nХотите узнать больше? Ознакомьтесь со справкой ниже!</string>
-    <string name="button_show_help">Показать ещё больше справки</string>
+    <string name="button_show_help">Расширенная справка</string>
     <string name="icon_update_status">Статус обновления</string>
     <string name="text_update">Все файлы hosts из определённых источников загружаются, объединяются с вашими собственными списками и устанавливаются в систему как один единый файл hosts.</string>
     <string name="button_enable_hosts">Включить блокировку</string>
@@ -56,7 +56,7 @@
     <string name="filter_set_saved">Набор фильтров сохранён</string>
     <string name="filter_set_applied">Набор фильтров применён</string>
     <string name="filter_set_none">Нет сохранённых наборов фильтров</string>
-    <string name="filter_set_schedule_off">Выкл.</string>
+    <string name="filter_set_schedule_off">Выключено</string>
     <string name="filter_set_schedule_daily">Ежедневно</string>
     <string name="filter_set_schedule_weekly">Еженедельно</string>
     <string name="filter_set_schedule_pick_time">Выбрать время</string>
@@ -66,7 +66,7 @@
     <string name="schedule_global_title">Общие обновления</string>
     <string name="schedule_global_desc">Автоматически обновлять все включённые источники</string>
     <string name="schedule_edit">Изменить расписание</string>
-    <string name="schedule_off">Выкл.</string>
+    <string name="schedule_off">Выключено</string>
     <string name="schedule_daily_at">Ежедневно в %1$s</string>
     <string name="schedule_weekly_at">Еженедельно в %1$s в %2$s</string>
 
@@ -90,7 +90,7 @@
     <string name="status_retrieve">Получение источников</string>
     <string name="status_download_source">Загрузка источника %s</string>
     <string name="status_read_source">Чтение источника %s</string>
-    <string name="status_parse_source">Разбор источника %s</string>
+    <string name="status_parse_source">Обработка источника %s</string>
     <string name="status_sync_database">Синхронизация базы правил</string>
     <string name="status_revert">Возврат к стандартному файлу hosts</string>
     <string name="status_revert_done">Стандартный файл hosts восстановлен</string>
@@ -98,15 +98,15 @@
     <string name="status_update_available">Доступно обновление источников</string>
     <string name="status_update_available_subtitle">Доступны более новые файлы hosts</string>
     <string name="status_no_update_found">Обновлений источников не найдено</string>
-    <string name="status_no_connection">Нет соединения</string>
+    <string name="status_no_connection">Нет интернет-соединения</string>
     <string name="status_no_connection_subtitle">Интернет-соединение недоступно</string>
     <string name="status_download_fail">Недоступные источники</string>
     <string name="status_download_fail_subtitle_new">Источники hosts недоступны!</string>
     <string name="status_root_access_denied">В доступе Root отказано</string>
     <string name="status_root_access_denied_subtitle">Разрешите Root-доступ в вашем приложении управления правами</string>
-    <string name="status_failure">Произошла ошибка</string>
+    <string name="status_failure">Что-то пошло не так</string>
     <string name="status_failure_subtitle">Проверьте logcat для получения подробностей</string>
-    <string name="status_enabled">Включено</string>
+    <string name="status_enabled">Подключено</string>
     <string name="status_enabled_subtitle">Новейшие файлы hosts включены</string>
     <string name="status_disabled">Отключено</string>
     <string name="status_disabled_subtitle">Установлен стандартный файл hosts</string>
@@ -145,7 +145,7 @@
     <string name="apply_apn_proxy">В Android настроен APN-прокси!\nAdAway не будет надёжно работать в мобильных сетях, таких как 3G. Вы можете отключить этот прокси в настройках APN (Настройки -> Сеть и Интернет -> Мобильная сеть -> Дополнительно -> Точки доступа) и удалить значение из поля «Прокси».</string>
     <string name="apply_apn_proxy_title">Настроен APN-прокси!</string>
     <string name="no_connection">Подключение к Интернету не работает.</string>
-    <string name="no_connection_title">Нет соединения</string>
+    <string name="no_connection_title">Нет интернет-соединения</string>
     <string name="download_dialog">Загрузка…</string>
     <string name="apply_dialog">Применение…</string>
     <string name="apply_dialog_lists">Применение чёрного и белого списков</string>
@@ -159,8 +159,8 @@
     <string name="revert_successful">Вы вернулись к стандартному файлу hosts.\nДля вступления изменений в силу может потребоваться перезагрузка Android.\n\nПерезагрузить сейчас?\n(Чтобы избежать потери данных, убедитесь, что ни одно приложение не использует SD-карту!)</string>
     <string name="revert_successful_title">Возврат успешен</string>
     <string name="revert_failed_status">Не удалось откатить файл hosts</string>
-    <string name="revert_problem">Возврат не удался по неизвестным причинам.</string>
-    <string name="revert_problem_title">Возврат не удался!</string>
+    <string name="revert_problem">Восстановление не удалось по неизвестным причинам.</string>
+    <string name="revert_problem_title">Восстановление не удалось!</string>
     <string name="download_fail_dialog">Ни один из включённых источников hosts недоступен! Проверьте подключение к Интернету.</string>
     <string name="download_fail_title">Загрузка не удалась</string>
     <string name="no_private_file_status">Не удалось записать новый приватный файл hosts</string>
@@ -179,9 +179,9 @@
 
     <!--Other Dialogs-->
     <string name="hosts_add_dialog">Введите URL-адрес файла hosts:</string>
-    <string name="no_hostname">Это невалидное имя узла!</string>
-    <string name="no_hostname_title">Неверный формат имени узла</string>
-    <string name="no_ip">Это невалидный IP-адрес!</string>
+    <string name="no_hostname">Это недопустимое имя узла!</string>
+    <string name="no_hostname_title">Неверный формат имени хоста</string>
+    <string name="no_ip">Это недопустимый IP-адрес!</string>
     <string name="no_ip_title">Неверный формат IP-адреса</string>
     <string name="reboot_never_reboot">Никогда не перезагружать и больше не задавать этот вопрос!</string>
     <string name="loading">Загрузка…</string>
@@ -218,7 +218,7 @@
     <string name="tcpdump_enable_monitoring">Включить мониторинг</string>
     <string name="tcpdump_show_results">Показать результаты</string>
     <string name="tcpdump_menu_sort">Сортировать домены</string>
-    <string name="tcpdump_menu_clear">Очистить лог</string>
+    <string name="tcpdump_menu_clear">Очистить журнал</string>
     <string name="tcpdump_entry_add_blacklist">Добавить в чёрный список</string>
     <string name="tcpdump_entry_add_whitelist">Добавить в белый список</string>
     <string name="tcpdump_entry_add_redirection_list">Добавить в список перенаправлений</string>
@@ -230,13 +230,13 @@
     <!-- !!! Attention, always translate all items from this array !!! - Drawer menu items -->
     <string-array name="drawer_items">
         <item>Главная</item>
-        <item>Источники hosts</item>
+        <item>Источники хостов</item>
         <item>Ваши списки</item>
         <item>Открыть файл hosts</item>
-        <item>Лог DNS-запросов</item>
-        <item>Сканировать на Adware</item>
+        <item>Журнал DNS-запросов</item>
+        <item>Сканировать на наличие приложений с рекламой</item>
         <item>Настройки</item>
-        <item>Справка</item>
+        <item>Помощь</item>
     </string-array>
     <!--Drawer menu labels-->
 
@@ -246,13 +246,13 @@
     <string name="shortcut_preferences">Настройки</string>
 
     <!--Hosts source status-->
-    <string name="hosts_source_installed">Установлено %1$s назад</string>
-    <string name="hosts_source_up_to_date">Актуально уже %1$s</string>
-    <string name="hosts_source_need_update">Нужно обновление (%1$s)</string>
+    <string name="hosts_source_installed">Установлен %1$s назад</string>
+    <string name="hosts_source_up_to_date">Актуален %1$s</string>
+    <string name="hosts_source_need_update">Требуется обновление %1$s</string>
     <string name="hosts_source_last_update">Последнее обновление %1$s назад</string>
     <string name="hosts_source_unknown_status">Неизвестный статус обновления</string>
-    <string name="hosts_source_disabled">Отключено</string>
-    <string name="hosts_source_few_minutes">несколько минут</string>
+    <string name="hosts_source_disabled">Отключен</string>
+    <string name="hosts_source_few_minutes">недавно</string>
     <plurals name="hosts_source_minutes">
         <item quantity="one">%d минута</item>
         <item quantity="few">%d минуты</item>
@@ -282,16 +282,16 @@
     <string name="clipboard_host_copied">Хост скопирован в буфер обмена</string>
 
     <!--VPN notification-->
-    <string name="vpn_notification_starting">запуск</string>
-    <string name="vpn_notification_running">активен</string>
-    <string name="vpn_notification_stopping">остановка</string>
+    <string name="vpn_notification_starting">запуск…</string>
+    <string name="vpn_notification_running">работает</string>
+    <string name="vpn_notification_stopping">остановка…</string>
     <string name="vpn_notification_waiting_for_net">ожидание сети</string>
     <string name="vpn_notification_reconnecting">переподключение</string>
     <string name="vpn_notification_reconnecting_error">ошибка переподключения</string>
-    <string name="vpn_notification_paused">пауза</string>
+    <string name="vpn_notification_paused">приостановлен</string>
     <string name="vpn_notification_stopped">остановлен</string>
     <string name="vpn_notification_title">VPN-блокировщик %1$s</string>
-    <string name="vpn_notification_action_pause">Пауза</string>
+    <string name="vpn_notification_action_pause">Приостановить</string>
     <string name="vpn_notification_action_resume">Возобновить</string>
 
     <!-- Permission -->

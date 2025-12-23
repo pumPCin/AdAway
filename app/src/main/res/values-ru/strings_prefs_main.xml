@@ -3,11 +3,11 @@
     <string name="pref_main_title">Настройки</string>
     <!-- General category -->
     <string name="pref_general_category">Общие</string>
-    <string name="pref_dark_theme">Тёмная тема</string>
+    <string name="pref_dark_theme">Выбор темы</string>
     <string-array name="pref_dark_theme_modes">
         <item>Светлая</item>
         <item>Тёмная</item>
-        <item>Системная по умолчанию</item>
+        <item>Системная</item>
     </string-array>
     <string name="pref_update_configuration">Автоматические обновления</string>
     <!-- Ad block category -->
@@ -15,5 +15,5 @@
     <string name="pref_root_ad_blocker_configuration">Блокировщик на основе Root</string>
     <string name="pref_vpn_ad_blocker_configuration">Блокировщик на основе VPN</string>
     <string name="pref_enable_ipv6">Включить поддержку IPv6</string>
-    <string name="pref_backup_restore">Бэкап / восстановление правил</string>
+    <string name="pref_backup_restore">Бэкап/восстановление правил блокировки</string>
 </resources>

@@ -3,14 +3,14 @@
     <string name="pref_vpn_title">Блокировщик на основе VPN</string>
     <!-- Service configuration -->
     <string name="pref_vpn_service_on_boot">Включать при загрузке</string>
-    <string name="pref_vpn_service_monitor">Мониторинг соединения</string>
+    <string name="pref_vpn_service_monitor">Проверка соединения</string>
     <string name="pref_vpn_service_monitor_description">Периодически проверять состояние сети для перезапуска VPN при разрыве соединения.</string>
     <!-- Excluded applications -->
     <string name="pref_vpn_excluded_apps">Исключённые приложения</string>
     <string name="pref_vpn_excluded_apps_description">Настройте приложения, которые не должны использовать VPN, чтобы их соединения не блокировались.</string>
     <string name="pref_vpn_exclude_system_apps">Исключить системные приложения</string>
     <string-array name="pref_vpn_excluded_system_apps_entries">
-        <item>Нет</item>
+        <item>Никакие</item>
         <item>Все, кроме браузеров</item>
         <item>Все</item>
     </string-array>
@@ -19,6 +19,6 @@
     <!-- Exclude user apps activity -->
     <string name="pref_vpn_exclude_user_apps_activity">Исключённые приложения</string>
     <string name="pref_vpn_exclude_user_apps_select_all">Выбрать все</string>
-    <string name="pref_vpn_exclude_user_apps_deselect_all">Снять выделение со всех</string>
-    <string name="pref_vpn_exclude_user_apps_icon">Иконка приложения</string>
+    <string name="pref_vpn_exclude_user_apps_deselect_all">Снять все</string>
+    <string name="pref_vpn_exclude_user_apps_icon">Значок приложения</string>
 </resources>

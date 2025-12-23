@@ -2,28 +2,28 @@
 <resources>
 
     <!-- Hosts card -->
-    <string name="blocked_hosts_label">Заблокировано</string>
+    <string name="blocked_hosts_label">Блокировано</string>
     <string name="allowed_hosts_label">Разрешено</string>
-    <string name="redirect_hosts_label">Перенаправлено</string>
+    <string name="redirect_hosts_label">Направлено</string>
 
     <!-- Source card -->
     <plurals name="up_to_date_source_label">
-        <item quantity="one">%d актуальный источник</item>
-        <item quantity="few">%d актуальных источника</item>
-        <item quantity="many">%d актуальных источников</item>
-        <item quantity="other">%d актуального источника</item>
+        <item quantity="one">%d обновлённый источник</item>
+        <item quantity="few">%d обновлённых источника</item>
+        <item quantity="many">%d обновлённых источников</item>
+        <item quantity="other">%d обновлённых источников</item>
     </plurals>
     <plurals name="outdated_source_label">
         <item quantity="one">%d устаревший источник</item>
         <item quantity="few">%d устаревших источника</item>
         <item quantity="many">%d устаревших источников</item>
-        <item quantity="other">%d устаревшего источника</item>
+        <item quantity="other">%d устаревших источников</item>
     </plurals>
     <string name="check_hosts_update_description">Проверить обновления источников</string>
     <string name="update_hosts_description">Обновить источники</string>
 
     <!-- Log card -->
-    <string name="log_label">Показать лог DNS-запросов</string>
+    <string name="log_label">Показать журнал DNS-запросов</string>
 
     <!-- Help card -->
     <string name="help_label">Показать справку\nи советы</string>
@@ -42,6 +42,6 @@
     <string name="show_log_button">Показать запрошенные домены</string>
 
     <!-- Error dialog -->
-    <string name="error_dialog_help">Пожалуйста, прочтите Справку для получения дополнительной информации.</string>
+    <string name="error_dialog_help">Пожалуйста, прочтите Справку, чтобы узнать больше.</string>
 
 </resources>

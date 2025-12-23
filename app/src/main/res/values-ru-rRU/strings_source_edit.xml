@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="source_edit_title">Изменить источник</string>
+    <string name="source_edit_title">Редактировать источник</string>
     <string name="source_edit_add_title">Добавить источник</string>
     <!-- Hosts source edition -->
     <string name="source_edit_label">Метка</string>
-    <string name="source_edit_label_required">Метка обязательна</string>
+    <string name="source_edit_label_required">Требуется метка</string>
     <string name="source_edit_type">Тип</string>
     <string name="source_edit_url">URL</string>
     <string name="source_edit_file">Файл</string>
@@ -14,10 +14,10 @@
     <string name="source_edit_file_hint">Нажмите «Файл», чтобы выбрать файл источника</string>
     <string name="source_edit_location_invalid">Недопустимое расположение</string>
     <string name="source_edit_format">Формат списка</string>
-    <string name="source_edit_format_block_list">Блокировка</string>
-    <string name="source_edit_format_allow_list">Разрешение</string>
+    <string name="source_edit_format_block_list">Блокировать</string>
+    <string name="source_edit_format_allow_list">Разрешить</string>
     <string name="source_edit_redirected_hosts">Применять перенаправленные хосты</string>
-    <string name="source_edit_redirected_hosts_warning">Разрешение перенаправленных хостов может вызвать проблемы с безопасностью. Используйте этот параметр только для доверенных источников, так как он может перенаправлять конфиденциальный трафик на любой сервер.</string>
+    <string name="source_edit_redirected_hosts_warning">Разрешение перенаправления хостов может вызвать проблемы с безопасностью. Используйте этот параметр только для доверенных источников, так как он может перенаправлять конфиденциальный трафик на любой сервер.</string>
 
     <!-- Advanced -->
     <string name="source_edit_auto_update">Расписание автообновления</string>

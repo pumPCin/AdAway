@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="log_toggle_recording_description">Переключить запись лога</string>
+    <string name="log_toggle_recording_description">Переключить запись журнала</string>
     <string name="log_start_recording">Нажмите кнопку записи, чтобы начать отслеживание запросов, затем пользуйтесь Интернетом или приложениями и вернитесь сюда (или потяните вниз), чтобы обновить лог.</string>
     <string name="log_blocked_requests_ignored">\n\nЗаблокированные запросы не будут записываться. Сначала отключите блокировку рекламы, если хотите видеть и их.</string>
     <!-- Sort -->

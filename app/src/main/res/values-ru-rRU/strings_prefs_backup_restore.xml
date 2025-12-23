@@ -2,7 +2,7 @@
 <resources>
     <string name="pref_backup_restore_title">Резервное копирование и восстановление</string>
     <string name="pref_backup">Резервное копирование</string>
-    <string name="pref_backup_summary">Сохранить ваши правила блокировки на внешнее хранилище</string>
+    <string name="pref_backup_summary">Сохранить резервную копию ваших правил блокировки на внешний носитель</string>
     <string name="pref_restore">Восстановление</string>
-    <string name="pref_restore_summary">Восстановить правила блокировки из файла бэкапа</string>
+    <string name="pref_restore_summary">Восстановить ваши правила блокировки из файла резервной копии</string>
 </resources>

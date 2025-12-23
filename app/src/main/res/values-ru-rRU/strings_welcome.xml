@@ -10,13 +10,13 @@
     <string name="welcome_method_summary">AdAway предлагает два метода блокировки рекламы. Выберите тот, который вам больше подходит:</string>
 
     <string name="welcome_root_method_logo">Логотип Root</string>
-    <string name="welcome_root_method_title">Блокировка\nна основе Root</string>
+    <string name="welcome_root_method_title">Root\nблокировка</string>
     <string name="welcome_root_method_text1">Быстрее</string>
     <string name="welcome_root_method_text2">Экономит заряд батареи</string>
-    <string name="welcome_root_method_text3">Требуется Root</string>
+    <string name="welcome_root_method_text3">Требуется Root права</string>
 
     <string name="welcome_vpn_method_logo">Логотип VPN</string>
-    <string name="welcome_vpn_method_title">Блокировка\nна основе VPN</string>
+    <string name="welcome_vpn_method_title">VPN\nблокировка</string>
     <string name="welcome_vpn_method_text1">Медленнее</string>
     <string name="welcome_vpn_method_text2">Работает в фоне</string>
     <string name="welcome_vpn_method_text3">Совместимость</string>
@@ -33,12 +33,12 @@
     <string name="welcome_method_con_logo">Минусы</string>
 
     <!-- Sync UI -->
-    <string name="welcome_sync_done_logo">Синхронизация завершена</string>
+    <string name="welcome_sync_done_logo">Синхронизация выполнена</string>
     <string name="welcome_sync_error_logo">Ошибка при синхронизации</string>
 
     <string name="welcome_sync_header">Синхронизация</string>
     <string name="welcome_synced_header">Синхронизировано!</string>
-    <string name="welcome_sync_summary">AdAway загружает списки рекламных сетей для блокировки из онлайн-источников. Вы сможете настроить их позже в настройках.</string>
+    <string name="welcome_sync_summary">AdAway загружает списки блокировки из онлайн-источников. Вы можете изменить их позже в настройках.</string>
     <string name="welcome_sync_retry_logo">Повторить синхронизацию</string>
     <string name="welcome_sync_error">Не удалось синхронизировать: %1$s Повторить сейчас?</string>
     <string name="welcome_sync_notifications">Приложение может отправлять уведомления для отображения статуса и управления блокировкой, а также сообщать о доступных обновлениях (несколько раз в год). Включите их, если хотите быть в курсе событий.</string>
@@ -46,5 +46,5 @@
     <!-- Navigation buttons -->
     <string name="welcome_back_button">Назад</string>
     <string name="welcome_next_button">Далее</string>
-    <string name="welcome_finish_button">Готово</string>
+    <string name="welcome_finish_button">Закончить</string>
 </resources>
