@@ -5,7 +5,7 @@
     <color name="primaryVariant">#e53935</color>
     <color name="onPrimary">#000000</color>
     <!-- App icon colors -->
-    <color name="drawer_icon">#B71C1C</color>
+    <color name="drawer_icon">#58b71c1c</color>
     <!-- Host list state -->
     <color name="blocked">#FF5252</color>
     <color name="allowed">#64FFDA</color>
@@ -15,9 +15,9 @@
     <color name="shortcut_background">#f5f5f5</color>
     <color name="card_spacer">#3F000000</color>
     <!-- Cards -->
-    <color name="cardBackground">#FF424242</color>
+    <color name="cardBackground">#FF212121</color>
     <color name="cardEnabledBackground">#388E3C</color>
     <color name="welcomeBackground">#B71C1C</color>
     <!-- Notifications -->
-    <color name="notification">#b71c1c</color>
+    <color name="notification">#000000</color>
 </resources>

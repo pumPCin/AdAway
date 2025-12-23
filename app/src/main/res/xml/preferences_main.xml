@@ -39,37 +39,4 @@
             app:title="@string/pref_backup_restore" />
     </PreferenceCategory>
 
-    <PreferenceCategory app:title="@string/pref_debug_category">
-        <SwitchPreferenceCompat
-            app:defaultValue="@bool/pref_enable_telemetry_def"
-            app:icon="@drawable/outline_cloud_upload_24"
-            app:key="@string/pref_enable_telemetry_key"
-            app:summary="@string/pref_enable_telemetry_summary"
-            app:title="@string/pref_enable_telemetry" />
-        <SwitchPreferenceCompat
-            app:defaultValue="@bool/pref_enable_debug_def"
-            app:icon="@drawable/ic_bug_report_24dp"
-            app:key="@string/pref_enable_debug_key"
-            app:summary="@string/pref_enable_debug_summary"
-            app:title="@string/pref_enable_debug" />
-    </PreferenceCategory>
-
-    <PreferenceCategory app:title="@string/pref_tools_support_category">
-        <Preference
-            app:icon="@drawable/ic_outline_rule_24"
-            app:key="pref_dns_log"
-            app:title="@string/log_label"
-            app:summary="@string/pref_dns_log_summary" />
-        <Preference
-            app:icon="@drawable/ic_help_24dp"
-            app:key="pref_help"
-            app:title="@string/help_label"
-            app:summary="@string/pref_help_summary" />
-        <Preference
-            app:icon="@drawable/baseline_favorite_24"
-            app:key="pref_donate"
-            app:title="@string/support_label"
-            app:summary="@string/pref_donate_summary" />
-    </PreferenceCategory>
-
 </PreferenceScreen>

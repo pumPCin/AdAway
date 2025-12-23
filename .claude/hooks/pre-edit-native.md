@@ -29,7 +29,7 @@ Files in scope: [list affected files]
 Before committing native changes:
 1. Check for obvious memory issues
 2. Verify Android.mk / CMakeLists.txt if needed
-3. Confirm build still works: `./gradlew assembleDebug`
+3. Confirm build still works: `./gradlew assembleRelease`
 
 ## Escalation
 If changes are significant, suggest:

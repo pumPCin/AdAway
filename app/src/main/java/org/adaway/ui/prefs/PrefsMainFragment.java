@@ -13,8 +13,6 @@ import org.adaway.helper.PreferenceHelper;
 import org.adaway.model.adblocking.AdBlockMethod;
 import org.adaway.ui.help.HelpActivity;
 import org.adaway.ui.log.LogActivity;
-import org.adaway.ui.support.SupportActivity;
-import org.adaway.util.log.SentryLog;
 
 import static org.adaway.model.adblocking.AdBlockMethod.ROOT;
 import static org.adaway.model.adblocking.AdBlockMethod.VPN;
@@ -35,8 +33,6 @@ public class PrefsMainFragment extends PreferenceFragmentCompat {
         // Bind pref actions
         bindThemePrefAction();
         bindAdBlockMethod();
-        bindTelemetryPrefAction();
-        bindToolsAndSupportActions();
     }
 
     @Override
@@ -71,42 +67,4 @@ public class PrefsMainFragment extends PreferenceFragmentCompat {
         vpnPreference.setEnabled(adBlockMethod == VPN);
     }
 
-    private void bindTelemetryPrefAction() {
-        Preference enableTelemetryPref = findPreference(getString(R.string.pref_enable_telemetry_key));
-        assert enableTelemetryPref != null : PREFERENCE_NOT_FOUND;
-        enableTelemetryPref.setOnPreferenceChangeListener((preference, newValue) -> {
-            SentryLog.setEnabled(requireActivity().getApplication(), (boolean) newValue);
-            return true;
-        });
-        if (SentryLog.isStub()) {
-            enableTelemetryPref.setEnabled(false);
-            enableTelemetryPref.setSummary(R.string.pref_enable_telemetry_disabled_summary);
-        }
-    }
-
-    private void bindToolsAndSupportActions() {
-        Preference dnsLogPref = findPreference("pref_dns_log");
-        if (dnsLogPref != null) {
-            dnsLogPref.setOnPreferenceClickListener(preference -> {
-                startActivity(new Intent(requireContext(), LogActivity.class));
-                return true;
-            });
-        }
-
-        Preference helpPref = findPreference("pref_help");
-        if (helpPref != null) {
-            helpPref.setOnPreferenceClickListener(preference -> {
-                startActivity(new Intent(requireContext(), HelpActivity.class));
-                return true;
-            });
-        }
-
-        Preference donatePref = findPreference("pref_donate");
-        if (donatePref != null) {
-            donatePref.setOnPreferenceClickListener(preference -> {
-                startActivity(new Intent(requireContext(), SupportActivity.class));
-                return true;
-            });
-        }
-    }
 }

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Filter List Categories (uBlock-style organization) -->
+    <string name="filter_category_user">Мои списки</string>
+    <string name="filter_category_user_desc">Ваши личные заблокированные, разрешённые и перенаправленные хосты</string>
+
+    <string name="filter_category_ads">Реклама</string>
+    <string name="filter_category_ads_desc">Блокировка рекламных сетей и серверов рекламы</string>
+
+    <string name="filter_category_youtube">YouTube</string>
+    <string name="filter_category_youtube_desc">Блокировка рекламы в YouTube (может блокироваться не на 100%)</string>
+
+    <string name="filter_category_privacy">Приватность</string>
+    <string name="filter_category_privacy_desc">Блокировка трекеров и систем аналитики</string>
+
+    <string name="filter_category_malware">Вредоносное ПО</string>
+    <string name="filter_category_malware_desc">Блокировка вредоносных и фишинговых доменов</string>
+
+    <string name="filter_category_crypto">Криптомайнеры</string>
+    <string name="filter_category_crypto_desc">Блокировка браузерных майнеров криптовалюты</string>
+
+    <string name="filter_category_social">Социальные сети</string>
+    <string name="filter_category_social_desc">Блокировка отслеживания соцсетями ⚠️ Может нарушить работу Facebook!</string>
+
+    <string name="filter_category_device">Телеметрия устройства</string>
+    <string name="filter_category_device_desc">Блокировка телеметрии Samsung/Xiaomi ⚠️ Может нарушить функции производителя!</string>
+
+    <string name="filter_category_service">Для конкретных сервисов</string>
+    <string name="filter_category_service_desc">Блокировка рекламы в конкретных приложениях ⚠️ Может нарушить их работу!</string>
+
+    <string name="filter_category_annoyances">Раздражители</string>
+    <string name="filter_category_annoyances_desc">Блокировка уведомлений о куки, всплывающих окон и прочего</string>
+
+    <string name="filter_category_regional">Региональные</string>
+    <string name="filter_category_regional_desc">Списки фильтров для конкретных стран</string>
+
+    <string name="filter_category_custom">Пользовательские</string>
+    <string name="filter_category_custom_desc">Ваши собственные источники фильтров</string>
+
+    <!-- Facebook Whitelist -->
+    <string name="filter_facebook_whitelist">Сервисы Facebook (защищено)</string>
+    <string name="filter_facebook_whitelist_desc">Гарантирует, что Facebook, Instagram, WhatsApp и Messenger всегда будут работать</string>
+
+    <!-- Filter List UI -->
+    <string name="filter_sources_title">Списки фильтров</string>
+    <string name="filter_sources_subtitle">Управление тем, что будет заблокировано</string>
+    <string name="filter_add_from_catalog">Просмотреть каталог</string>
+    <string name="filter_add_custom">Добавить свой источник</string>
+    <string name="filter_category_enable_all">Включить всё</string>
+    <string name="filter_category_disable_all">Выключить всё</string>
+    <string name="filter_hosts_count">%s хостов</string>
+    <string name="filter_last_updated">Обновлено: %s</string>
+    <string name="filter_never_updated">Ни разу не обновлялось</string>
+    <string name="filter_update_available">Доступно обновление</string>
+    <string name="filter_enabled">Включено</string>
+    <string name="filter_disabled">Выключено</string>
+
+    <!-- Catalog Dialog -->
+    <string name="filter_catalog_title">Каталог списков фильтров</string>
+    <string name="filter_catalog_subtitle">Выберите списки для добавления</string>
+    <string name="filter_catalog_add_selected">Добавить выбранные</string>
+    <string name="filter_catalog_count">Доступно списков фильтров: %d</string>
+    <string name="filter_search_hint">Поиск списков фильтров…</string>
+
+    <!-- Status Messages -->
+    <string name="filter_added_success">Список фильтров добавлен</string>
+    <string name="filter_removed_success">Список фильтров удалён</string>
+    <string name="filter_update_started">Обновление списков фильтров…</string>
+    <string name="filter_update_complete">Списки фильтров обновлены</string>
+
+    <!-- Online directory -->
+    <string name="filterlists_import">Импорт с FilterLists.com</string>
+    <string name="filterlists_subscribe_all">Подписаться на всё</string>
+
+    <!-- Category Summaries (shown in collapsed state) -->
+    <string name="filter_category_summary_enabled">Включено: %1$d из %2$d • хостов: %3$s</string>
+    <string name="filter_category_summary_disabled">Все выключены</string>
+
+    <!-- Warnings -->
+    <string name="filter_warning_may_break">⚠️ Эти фильтры могут нарушить работу приложений или сервисов</string>
+    <string name="filter_warning_facebook">⚠️ Может нарушить работу Facebook, Instagram, WhatsApp, Messenger</string>
+    <string name="filter_warning_device">⚠️ Может нарушить работу Samsung Pay, Xiaomi Cloud, функций производителя</string>
+    <string name="filter_warning_service">⚠️ Может нарушить работу целевого приложения</string>
+
+    <!-- Preset Modes -->
+    <string name="filter_preset_title">Быстрая настройка</string>
+    <string name="filter_preset_safe">Безопасный режим</string>
+    <string name="filter_preset_safe_desc">Базовая блокировка рекламы и вредоносов. Ничего не сломает.</string>
+    <string name="filter_preset_balanced">Сбалансированный режим</string>
+    <string name="filter_preset_balanced_desc">Реклама, вредоносы, базовая приватность, криптомайнеры.</string>
+    <string name="filter_preset_aggressive">Агрессивный режим</string>
+    <string name="filter_preset_aggressive_desc">Максимальная блокировка. Может нарушить работу некоторых сервисов.</string>
+    <string name="filter_preset_custom">Пользовательский</string>
+    <string name="filter_preset_custom_desc">Вы сами управляете каждым списком отдельно.</string>
+</resources>

@@ -665,22 +665,6 @@
             android:text="@string/help_label" />
     </androidx.cardview.widget.CardView>
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/supportCardView"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:visibility="gone"
-        app:layout_constraintTop_toBottomOf="@+id/sourcesCardView"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:visibility="gone">
-        <TextView
-            android:id="@+id/supportTextView"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:text="@string/support_label" />
-    </androidx.cardview.widget.CardView>
-
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"
         android:layout_width="wrap_content"
