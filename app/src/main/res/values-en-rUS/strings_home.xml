@@ -17,6 +17,15 @@
     </plurals>
     <string name="check_hosts_update_description">Check for hosts updates</string>
     <string name="update_hosts_description">Update hosts</string>
+    <string name="progress_preparing">FilterLists subscribing: Preparing…</string>
+    <string name="progress_subscribing">FilterLists subscribing: %1$d/%2$d (%3$d%%)</string>
+    <string name="progress_scheduled">Scheduled update: %1$d/%2$d (%3$d%%)</string>
+    <string name="progress_updating_sources">Updating sources: %1$d/%2$d (%3$s%%)</string>
+    <string name="progress_source_percent">%1$d%% of this list</string>
+    <string name="progress_multi_complete_blocked">%1$.1f%% Complete • %2$,d blocked</string>
+    <string name="progress_multi_complete">%1$.1f%% Complete</string>
+    <string name="progress_scheduled_task">Scheduled: %1$s</string>
+    <string name="view_action">View</string>
 
     <!-- Log card -->
     <string name="log_label">Show DNS request log</string>

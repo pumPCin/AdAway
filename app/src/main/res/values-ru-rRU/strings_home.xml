@@ -21,6 +21,15 @@
     </plurals>
     <string name="check_hosts_update_description">Проверить обновления источников</string>
     <string name="update_hosts_description">Обновить источники</string>
+    <string name="progress_preparing">Подписка от FilterLists: Подготовка…</string>
+    <string name="progress_subscribing">Подписка от FilterLists: %1$d/%2$d (%3$d%%)</string>
+    <string name="progress_scheduled">Плановое обновление: %1$d/%2$d (%3$d%%)</string>
+    <string name="progress_updating_sources">Обновление источников: %1$d/%2$d (%3$s%%)</string>
+    <string name="progress_source_percent">%1$d%% этого списка</string>
+    <string name="progress_multi_complete_blocked">Завершено %1$.1f%% • Заблокировано %2$,d</string>
+    <string name="progress_multi_complete">Завершено %1$.1f%%</string>
+    <string name="progress_scheduled_task">По расписанию: %1$s</string>
+    <string name="view_action">Смотреть</string>
 
     <!-- Log card -->
     <string name="log_label">Показать журнал DNS-запросов</string>

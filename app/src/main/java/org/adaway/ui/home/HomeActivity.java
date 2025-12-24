@@ -213,9 +213,9 @@ public class HomeActivity extends AppCompatActivity {
                     int percent = total > 0 ? (int) Math.floor(done * 100.0 / total) : 0;
                     String msg;
                     if (total <= 0) {
-                        msg = "FilterLists subscribing: Preparing…";
+                        msg = getString(R.string.progress_preparing);
                     } else {
-                        msg = "FilterLists subscribing: " + done + "/" + total + " (" + percent + "%)";
+                        msg = getString(R.string.progress_subscribing, done, total, percent);
                     }
                     if (currentName != null && !currentName.isEmpty()) {
                         msg += " • " + currentName;
@@ -237,7 +237,7 @@ public class HomeActivity extends AppCompatActivity {
 
                     if (filterListsProgressSnackbar == null) {
                         filterListsProgressSnackbar = Snackbar.make(this.binding.getRoot(), msg, Snackbar.LENGTH_INDEFINITE)
-                                .setAction("View", v -> startActivity(new Intent(this, FilterListsImportActivity.class)));
+                                .setAction(R.string.view_action, v -> startActivity(new Intent(this, FilterListsImportActivity.class)));
                         filterListsProgressSnackbar.show();
                     } else {
                         filterListsProgressSnackbar.setText(msg);
@@ -286,7 +286,7 @@ public class HomeActivity extends AppCompatActivity {
                     String current = info.getProgress().getString(FilterSetUpdateWorker.PROGRESS_CURRENT);
                     int percent = total > 0 ? (int) Math.floor(done * 100.0 / total) : 0;
 
-                    String msg = "Scheduled update: " + done + "/" + total + " (" + percent + "%)";
+                    String msg = getString(R.string.progress_scheduled, done, total, percent);
                     if (current != null && !current.isEmpty()) msg += " • " + current;
 
                     // If subscribe-all is not running, reuse the main-screen percent UI.
@@ -337,12 +337,13 @@ public class HomeActivity extends AppCompatActivity {
             double pct = progress.basisPoints / 100.0;
             int percentForBar = (int) Math.floor(pct);
             if (percentForBar <= 0 && progress.isActive()) percentForBar = 1; // ensure it doesn't look stuck at 0
-            String msg = "Updating sources: " + done + "/" + total + " (" + String.format(java.util.Locale.ROOT, "%.1f", pct) + "%)";
+            String formattedPct = String.format(java.util.Locale.ROOT, "%.1f", pct);
+            String msg = getString(R.string.progress_updating_sources, done, total, formattedPct);
             if (progress.currentLabel != null && !progress.currentLabel.isEmpty()) {
                 msg += " • " + progress.currentLabel;
             }
             if (progress.currentSourcePercent > 0 && progress.currentSourcePercent < 100) {
-                msg += " • " + progress.currentSourcePercent + "% of this list";
+                msg += " • " + getString(R.string.progress_source_percent, progress.currentSourcePercent);
             }
 
             // If FilterLists subscribe-all is showing, don't fight it.
@@ -407,10 +408,10 @@ public class HomeActivity extends AppCompatActivity {
             // Show live blocked count during update
             String progressText;
             if (progress.parsedHostCount > 0) {
-                progressText = String.format(java.util.Locale.ROOT, "%.1f%% Complete • %,d blocked",
+                progressText = String.format(java.util.Locale.ROOT, getString(R.string.progress_multi_complete_blocked),
                         overallPercentDouble, progress.parsedHostCount);
             } else {
-                progressText = String.format(java.util.Locale.ROOT, "%.1f%% Complete", overallPercentDouble);
+                progressText = String.format(java.util.Locale.ROOT, getString(R.string.progress_multi_complete), overallPercentDouble);
             }
             this.binding.content.overallProgressText.setText(progressText);
 
@@ -449,7 +450,7 @@ public class HomeActivity extends AppCompatActivity {
             // Show scheduler task info if present
             if (progress.schedulerTaskName != null && !progress.schedulerTaskName.isEmpty()) {
                 this.binding.content.schedulerTaskContainer.setVisibility(View.VISIBLE);
-                this.binding.content.schedulerTaskName.setText("Scheduled: " + progress.schedulerTaskName);
+                this.binding.content.schedulerTaskName.setText(getString(R.string.progress_scheduled_task, progress.schedulerTaskName));
             } else {
                 this.binding.content.schedulerTaskContainer.setVisibility(View.GONE);
             }
