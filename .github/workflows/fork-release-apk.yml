@@ -1,4 +1,4 @@
-name: Fork APK Release
+name: Release APK (tagged)
 
 on:
   workflow_dispatch:

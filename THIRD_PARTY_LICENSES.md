@@ -55,6 +55,10 @@ If not, see <https://www.gnu.org/licenses/>.
   https://github.com/kaitoy/pcap4j  
   MIT License
 
+* Sentry Java  
+  https://github.com/getsentry/sentry-java  
+  BSD 3-Clause License
+
 * SLF4J  
   https://www.slf4j.org/  
   MIT License
