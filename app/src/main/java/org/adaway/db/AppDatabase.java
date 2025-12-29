@@ -96,7 +96,7 @@ public abstract class AppDatabase extends RoomDatabase {
         hostsSourceDao.insert(userSource);
         // AntiZapret
         HostsSource source3 = new HostsSource();
-        source3.setLabel("AntiZapret Hosts"));
+        source3.setLabel("AntiZapret Hosts");
         source3.setUrl("https://raw.githubusercontent.com/pumPCin/AntiZapret/refs/heads/main/hosts");
         hostsSourceDao.insert(source1);
         // AdAway official
