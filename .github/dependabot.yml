@@ -8,12 +8,7 @@ updates:
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
-      interval: "weekly"
-    labels:
-      - "github_actions"
-      - "infrastructure / ops"
-    commit-message:
-      prefix: "chore(ci): "
+      interval: weekly
     groups:
       gh-actions-packages:
         patterns:

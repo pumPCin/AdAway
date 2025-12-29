@@ -50,12 +50,6 @@
     <bool name="pref_vpn_service_on_boot_def">true</bool>
     <string name="pref_vpn_watchdog_enabled_key" translatable="false">vpnWatchdog</string>
     <bool name="pref_vpn_watchdog_enabled_def">false</bool>
-    <string name="pref_enable_debug_key" translatable="false">debugEnabled</string>
-    <bool name="pref_enable_debug_def">false</bool>
-    <string name="pref_enable_telemetry_key" translatable="false">enableTelemetry</string>
-    <bool name="pref_enable_telemetry_def">false</bool>
-    <string name="pref_display_telemetry_consent_key" translatable="false">displayTelemetryConsent</string>
-    <bool name="pref_display_telemetry_consent_def">true</bool>
     <string name="pref_backup_key" translatable="false">backup</string>
     <string name="pref_restore_key" translatable="false">restore</string>
     <string name="pref_vpn_excluded_system_apps_key" translatable="false">excludeSystemAppFromVpn</string>
