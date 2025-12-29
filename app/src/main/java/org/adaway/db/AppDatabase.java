@@ -95,24 +95,24 @@ public abstract class AppDatabase extends RoomDatabase {
         userSource.setRedirectEnabled(true);
         hostsSourceDao.insert(userSource);
         // AntiZapret
-        HostsSource source3 = new HostsSource();
-        source3.setLabel("AntiZapret Hosts");
-        source3.setUrl("https://raw.githubusercontent.com/pumPCin/AntiZapret/refs/heads/main/hosts");
+        HostsSource source1 = new HostsSource();
+        source1.setLabel("AntiZapret Hosts");
+        source1.setUrl("https://raw.githubusercontent.com/pumPCin/AntiZapret/refs/heads/main/hosts");
         hostsSourceDao.insert(source1);
         // AdAway official
-        HostsSource source1 = new HostsSource();
-        source1.setLabel(context.getString(R.string.hosts_adaway_source));
-        source1.setUrl("https://adaway.org/hosts.txt");
+        HostsSource source2 = new HostsSource();
+        source2.setLabel(context.getString(R.string.hosts_adaway_source));
+        source2.setUrl("https://adaway.org/hosts.txt");
         hostsSourceDao.insert(source2);
         // StevenBlack
-        HostsSource source2 = new HostsSource();
-        source2.setLabel(context.getString(R.string.hosts_stevenblack_source));
-        source2.setUrl("https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts");
+        HostsSource source3 = new HostsSource();
+        source3.setLabel(context.getString(R.string.hosts_stevenblack_source));
+        source3.setUrl("https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts");
         hostsSourceDao.insert(source3);
         // Pete Lowe
-        HostsSource source3 = new HostsSource();
-        source3.setLabel(context.getString(R.string.hosts_peterlowe_source));
-        source3.setUrl("https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&showintro=0&mimetype=plaintext");
+        HostsSource source4 = new HostsSource();
+        source4.setLabel(context.getString(R.string.hosts_peterlowe_source));
+        source4.setUrl("https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&showintro=0&mimetype=plaintext");
         hostsSourceDao.insert(source4);
     }
 
