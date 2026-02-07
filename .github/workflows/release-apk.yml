@@ -37,7 +37,7 @@ jobs:
         run: ./gradlew assembleRelease --no-daemon
 
       - name: Upload Release APK
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         if: success()
         with:
           path: app/build/outputs/apk/release/*.apk
