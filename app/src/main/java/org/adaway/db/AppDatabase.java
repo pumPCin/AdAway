@@ -94,21 +94,27 @@ public abstract class AppDatabase extends RoomDatabase {
         userSource.setAllowEnabled(true);
         userSource.setRedirectEnabled(true);
         hostsSourceDao.insert(userSource);
-        // AdAway official
+        // AntiZapret
         HostsSource source1 = new HostsSource();
-        source1.setLabel(context.getString(R.string.hosts_adaway_source));
-        source1.setUrl("https://adaway.org/hosts.txt");
+        source1.setLabel("AntiZapret Hosts");
+        source1.setUrl("https://raw.githubusercontent.com/pumPCin/AntiZapret/refs/heads/main/hosts");
+        source1.setRedirectEnabled(true);
         hostsSourceDao.insert(source1);
-        // StevenBlack
+        // AdAway official
         HostsSource source2 = new HostsSource();
-        source2.setLabel(context.getString(R.string.hosts_stevenblack_source));
-        source2.setUrl("https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts");
+        source2.setLabel(context.getString(R.string.hosts_adaway_source));
+        source2.setUrl("https://adaway.org/hosts.txt");
         hostsSourceDao.insert(source2);
-        // Pete Lowe
+        // StevenBlack
         HostsSource source3 = new HostsSource();
-        source3.setLabel(context.getString(R.string.hosts_peterlowe_source));
-        source3.setUrl("https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&showintro=0&mimetype=plaintext");
+        source3.setLabel(context.getString(R.string.hosts_stevenblack_source));
+        source3.setUrl("https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts");
         hostsSourceDao.insert(source3);
+        // Pete Lowe
+        HostsSource source4 = new HostsSource();
+        source4.setLabel(context.getString(R.string.hosts_peterlowe_source));
+        source4.setUrl("https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&showintro=0&mimetype=plaintext");
+        hostsSourceDao.insert(source4);
     }
 
     /**
