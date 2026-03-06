@@ -2,11 +2,6 @@ plugins {
     id 'com.android.application'
 }
 
-boolean keyStoreDefined = project.hasProperty('signingStoreLocation') &&
-        project.hasProperty('signingStorePassword') &&
-        project.hasProperty('signingKeyAlias') &&
-        project.hasProperty('signingKeyPassword')
-
 repositories {
     maven {
         url 'https://jitpack.io'
@@ -34,25 +29,13 @@ android {
         }
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-    }
-
-    /*
-     * To sign release build, create file gradle.properties in ~/.gradle/ with this content:
-     *
-     * signingStoreLocation=/home/key.store
-     * signingStorePassword=xxx
-     * signingKeyAlias=alias
-     * signingKeyPassword=xxx
-     */
-    if (keyStoreDefined) {
-        println "Found signature properties in gradle.properties. Build will be signed."
 
         signingConfigs {
             release {
-                storeFile file(signingStoreLocation)
-                storePassword signingStorePassword
-                keyAlias signingKeyAlias
-                keyPassword signingKeyPassword
+                storeFile = file(System.getenv("DEBUG_KEYSTORE") ?: "debug.keystore")
+                storePassword = System.getenv("DEBUG_KEYSTORE_PASSWORD") ?: "android"
+                keyAlias = System.getenv("DEBUG_KEY_ALIAS") ?: "androiddebugkey"
+                keyPassword = System.getenv("DEBUG_KEY_PASSWORD") ?: "android"
             }
         }
 
@@ -76,11 +59,9 @@ android {
     }
 
     buildTypes {
-//        debug {
-//            shrinkResources false
-//            minifyEnabled false
-//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-//        }
+        debug {
+            signingConfig signingConfigs.release
+        }
         release {
             minifyEnabled true
             shrinkResources true
@@ -123,14 +104,6 @@ dependencies {
     implementation libs.okhttp3.okhttp
     // Logging related
     implementation libs.timber
-    if (keyStoreDefined) {
-        implementation project(':sentrystub')
-    } else {
-        implementation platform('io.sentry:sentry-bom:7.8.0')
-        implementation('io.sentry:sentry-android')
-        implementation('io.sentry:sentry-android-fragment')
-        implementation('io.sentry:sentry-android-timber')
-    }
 
     // Root related
     implementation libs.libsu
