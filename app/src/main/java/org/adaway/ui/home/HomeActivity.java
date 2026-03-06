@@ -47,7 +47,6 @@ import org.adaway.ui.hosts.HostsSourcesActivity;
 import org.adaway.ui.lists.ListsActivity;
 import org.adaway.ui.log.LogActivity;
 import org.adaway.ui.prefs.PrefsActivity;
-import org.adaway.ui.support.SupportActivity;
 import org.adaway.ui.update.UpdateActivity;
 import org.adaway.ui.welcome.WelcomeActivity;
 
@@ -228,7 +227,6 @@ public class HomeActivity extends AppCompatActivity {
         this.binding.content.updateImageView.setOnClickListener(v -> this.homeViewModel.sync());
         this.binding.content.logCardView.setOnClickListener(this::startDnsLogActivity);
         this.binding.content.helpCardView.setOnClickListener(this::startHelpActivity);
-        this.binding.content.supportCardView.setOnClickListener(this::showSupportActivity);
     }
 
     private void setUpBottomDrawer() {
@@ -306,15 +304,6 @@ public class HomeActivity extends AppCompatActivity {
         // Show development page
         Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(PROJECT_LINK));
         startActivity(browserIntent);
-    }
-
-    /**
-     * Show support activity.
-     *
-     * @param view The source event view.
-     */
-    private void showSupportActivity(View view) {
-        startActivity(new Intent(this, SupportActivity.class));
     }
 
     /**
