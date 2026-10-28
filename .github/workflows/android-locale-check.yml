@@ -39,7 +39,7 @@ jobs:
           java .github/workflows/AndroidLocaleChecker.java ${ALL_CHANGED_FILES}
 
       - name: Commit patch
-        uses: stefanzweifel/git-auto-commit-action@v7.2.0
+        uses: stefanzweifel/git-auto-commit-action@v7.2.1
         if: steps.validation.outputs.patch_applied == 'true'
         with:
           message: 'chore(locale): Fix contribution'
